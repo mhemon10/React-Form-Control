@@ -1,6 +1,7 @@
 import './App.css'
-import FromAction from './components/FromAction/FromAction'
-import SimpleForm from './components/SimpleFrom.jsx/SimpleForm'
+import FromAction from './components/FormAction/FormAction'
+import ProductManagement from './components/ProductManagemet/ProductManagement'
+import SimpleForm from './components/SimpleForm.jsx/SimpleForm'
 import UnControlledField from './components/UnControlledField/UnControlledField'
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
       <h1>Explore React Form</h1>
       {/* <SimpleForm></SimpleForm> */}
       {/* <FromAction></FromAction> */}
-      <UnControlledField></UnControlledField>
+      {/* <UnControlledField></UnControlledField>*/}
+      <ProductManagement></ProductManagement>
     </>
   )
 }
