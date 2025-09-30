@@ -1,15 +1,26 @@
 import React from "react";
 
-const ProductFrom = () => {
+const ProductFrom = ({ handleAddProduct }) => {
 
-    const handleProductSubmit = e => {
-        e.preventDefault();
-}
+  const handleProductSubmit = e => {
+    e.preventDefault();
 
+    const name = e.target.name.value;
+    const price = e.target.price.value;
+    const quantity = e.target.quantity.value;
+
+      // console.log(name, price, quantity);
+      const newProduct = {
+          name,
+          price,
+          quantity
+      }
+      handleAddProduct(newProduct);
+  }
 
   return (
-      <div>
-          <h3>Add a Product</h3>
+    <div>
+      <h3>Add a Product</h3>
       <form onSubmit={handleProductSubmit}>
         <input type="text" name="name" placeholder="Product Name" />
         <br />
