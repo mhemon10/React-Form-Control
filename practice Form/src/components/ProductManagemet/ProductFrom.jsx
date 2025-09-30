@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ProductFrom = ({ handleAddProduct }) => {
+const ProductForm = ({ handleAddProduct }) => {
   const [error, setError] = useState("");
 
   const handleProductSubmit = (e) => {
@@ -58,4 +58,4 @@ const ProductFrom = ({ handleAddProduct }) => {
   );
 };
 
-export default ProductFrom;
+export default ProductForm;
